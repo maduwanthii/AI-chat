@@ -43,6 +43,24 @@ Create a .env file based on the provided .env.example:
 GEMINI_API_KEY=your_gemini_api_key_here
 PORT=3000
 
+## 🧪 API Testing with Postman
+
+You can test the backend Gemini API integration using **Postman**:
+
+### Endpoint
+
+**POST** `http://localhost:3000/api/chat`
+
+### Headers
+### Body (JSON)
+
+```json
+{
+  "prompt": "What is AI?"
+}
+
+{ "response": "Artificial Intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems..." }
+
 ```bash
 git clone https://github.com/maduwanthii/AI-chat.git
 cd AI-chat
@@ -56,3 +74,5 @@ cd AI-chat
    cd frontend
    npm install
    npm run dev
+
+
